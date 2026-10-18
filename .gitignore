@@ -1,0 +1,8 @@
+.idea/
+testtt/
+**/.dart_tool/
+**/build/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/android/.gradle/
+**/ios/Flutter/.last_build_id

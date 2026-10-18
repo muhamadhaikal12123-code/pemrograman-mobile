@@ -1,0 +1,77 @@
+# Pertemuan 3 – Pemrograman Mobile
+
+**Nama:** Muhamad Haikal Umardi  
+**NIM:** 20240801169  
+**Program Studi:** Teknik Informatika
+
+## Deskripsi
+
+Project ini merupakan tugas praktikum Pemrograman Mobile menggunakan Flutter. Aplikasi terdiri dari beberapa bagian praktikum dan tugas yang dapat diakses melalui menu utama.
+
+## Daftar Praktikum
+
+1. **Praktikum A – Input Dasar**  
+   Mempelajari input data pengguna dan menampilkan sapaan berdasarkan nama.
+
+2. **Praktikum B – Form Validation**  
+   Mempelajari pembuatan formulir, validasi input, pemilihan kategori, dan persetujuan pengguna.
+
+3. **Praktikum C – State Management**  
+   Mempelajari pengelolaan state menggunakan `StatefulWidget` dan `setState()` melalui aplikasi penghitung angka.
+
+4. **Praktikum D – To-Do List**  
+   Mempelajari pengelolaan daftar tugas, menandai tugas selesai, dan menghapus tugas.
+
+5. **Tugas – Shopping List**  
+   Membuat aplikasi daftar belanja dengan pengelolaan state menggunakan Provider.
+
+## Teknologi yang Digunakan
+
+- Flutter
+- Bahasa pemrograman Dart
+- Material Design
+- Provider untuk pengelolaan state pada tugas Shopping List
+
+## Struktur Folder
+
+```text
+pertemuan_3/
+├── lib/
+│   ├── main.dart
+│   ├── praktikum/
+│   │   ├── bagian_a/
+│   │   │   ├── main.dart
+│   │   │   └── README.md
+│   │   ├── bagian_b/
+│   │   │   ├── main.dart
+│   │   │   └── README.md
+│   │   ├── bagian_c/
+│   │   │   ├── main.dart
+│   │   │   └── README.md
+│   │   └── bagian_d/
+│   │       ├── main.dart
+│   │       └── README.md
+│   └── tugas/
+│       ├── main.dart
+│       └── README.md
+├── pubspec.yaml
+└── README.md
+```
+
+## Cara Menjalankan Aplikasi
+
+1. Buka folder project `pertemuan_3` di VS Code.
+2. Pastikan Flutter SDK sudah terpasang.
+3. Jalankan perintah berikut di terminal:
+
+```bash
+flutter pub get
+flutter run
+```
+
+4. Pilih emulator Android yang tersedia.
+5. Gunakan menu utama untuk membuka setiap bagian praktikum dan tugas.
+
+## Kesimpulan
+
+Melalui project ini, mahasiswa mempelajari dasar pembuatan aplikasi mobile menggunakan Flutter, mulai dari input pengguna, validasi formulir, pengelolaan state, daftar tugas, hingga penggunaan Provider.
