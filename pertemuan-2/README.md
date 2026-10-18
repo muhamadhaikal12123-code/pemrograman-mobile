@@ -1,39 +1,45 @@
-# Praktikum Flutter Pertemuan 2
-## Layout, ListView, dan Navigasi Antar Halaman
-
-**Nama:** Muhamad Haikal Umardi  
-**NIM:** 20240801169  
-**Program Studi:** Teknik Informatika
+# Pertemuan 2 — Pembuatan Tampilan dan Navigasi
 
 ## Deskripsi
-Praktikum ini membahas pembuatan tampilan aplikasi Flutter menggunakan widget layout, menampilkan data dalam bentuk daftar, serta navigasi antarhalaman.
+
+Pada pertemuan kedua, praktikum berfokus pada pembuatan tampilan aplikasi yang lebih beragam menggunakan Flutter. Saya mencoba membuat beberapa halaman dengan fungsi berbeda, mulai dari halaman profil, daftar menu, detail informasi, sampai daftar kontak.
+
+Selain mengatur tampilan, saya juga mempelajari cara berpindah dari satu halaman ke halaman lainnya agar aplikasi lebih mudah digunakan.
+
+## Materi yang Dipelajari
+
+- Menyusun tampilan menggunakan widget Flutter.
+- Menampilkan informasi dalam bentuk teks, gambar, dan daftar.
+- Mengatur tata letak agar isi halaman lebih rapi.
+- Membuat halaman yang memiliki fungsi berbeda.
+- Memahami navigasi ant halaman menggunakan `Navigator`.
+- Mengirim dan menampilkan informasi pada halaman detail.
 
 ## Praktikum
 
-### Bagian A — Kartu Profil
-Membuat tampilan profil menggunakan `Container`, `Padding`, `Row`, `Column`, dan `Expanded`.
-
-File: `lib/praktikum/bagian_a/bagian_a_profil.dart`
+### Bagian A — Profil
+Membuat halaman profil yang menampilkan informasi diri. Pada bagian ini, saya berlatih menyusun beberapa elemen dalam satu halaman agar informasi mudah dibaca.
 
 ### Bagian B — Daftar Menu
-Membuat model data makanan dan menampilkan daftar menu menggunakan `ListView.builder`, `Card`, dan `ListTile`.
-
-File: `lib/praktikum/bagian_b/bagian_b_menu.dart`
+Membuat halaman yang menampilkan kumpulan menu. Praktikum ini melatih penggunaan widget untuk menampilkan data dalam bentuk daftar.
 
 ### Bagian C — Detail dan Navigasi
-Membuat halaman detail menu menggunakan `Navigator.push` dan kembali ke halaman sebelumnya menggunakan `Navigator.pop`.
+Membuat halaman detail dan menghubungkannya dengan halaman sebelumnya. Pengguna dapat memilih suatu item lalu membuka halaman yang berisi informasi lebih lengkap.
 
-File: `lib/praktikum/bagian_c/bagian_c_detail.dart`
+### Bagian D — Daftar Kontak
+Membuat halaman daftar kontak dengan minimal enam kontak. Setiap kontak ditampilkan sebagai item tersendiri agar daftar lebih terstruktur dan mudah dilihat.
 
-## Tugas — Daftar Kontak
-Membuat aplikasi daftar kontak yang menampilkan minimal enam kontak, meliputi nama, nomor telepon, dan email. Pengguna dapat memilih kontak untuk melihat halaman detail.
+## Tujuan Praktikum
 
-File: `lib/tugas/daftar_kontak.dart`
+Praktikum ini bertujuan agar saya bisa membuat beberapa halaman dalam satu aplikasi, menyusun informasi menggunakan widget yang sesuai, dan memahami alur navigasi ant halaman.
 
-## Cara Menjalankan
-1. Buka terminal di folder proyek.
-2. Jalankan perintah `flutter run`.
-3. Pilih bagian praktikum atau tugas dari halaman utama.
+## Struktur Folder
 
-## Pemeriksaan Kode
-Kode telah diperiksa menggunakan `flutter analyze` dan menghasilkan `No issues found!`.
+- `praktikum/` — Berisi kode praktikum bagian A sampai D.
+- `tugas/` — Berisi kode tugas pertemuan kedua.
+- `doc-tugas/` — Tempat menyimpan dokumentasi atau laporan tugas.
+- `README.md` — Penjelasan materi dan isi folder pertemuan.
+
+## Kesimpulan
+
+Melalui praktikum ini, saya belajar bahwa aplikasi tidak hanya terdiri dari satu halaman. Setiap halaman bisa memiliki fungsi yang berbeda dan dihubungkan melalui navigasi. Saya juga semakin terbiasa menggunakan widget untuk menampilkan informasi secara lebih teratur.
