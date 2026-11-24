@@ -4,6 +4,5 @@ Materi: `ThemeData` & `ThemeMode` (Material 3), `Theme.of(context)`, Named Route
 
 ## Struktur
 
-- `lib/main.dart` & `praktikum/bagian_d/main.dart` — Aplikasi praktikum lengkap (Bagian A–D).
-- `praktikum/bagian_a` – `praktikum/bagian_c` — Potongan implementasi per bagian praktikum.
-- `tugas/main.dart` — Aplikasi Katalog Wisata Nusantara (3 tab `NavigationBar` + `IndexedStack`, named routes + `Hero`, animasi implisit & eksplisit, serta tema dinamis berbasis `Theme.of(context)`).
+- `praktikum/` — Implementasi langkah praktikum Bagian A–D (`bagian_a` s.d. `bagian_d`).
+- `tugas/` — Aplikasi Katalog Wisata Nusantara (3 tab `NavigationBar` + `IndexedStack`, named routes + `Hero`, animasi implisit & eksplisit, serta tema dinamis berbasis `Theme.of(context)`).
