@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'models/kegiatan.dart';
 import 'pages/form_kegiatan_page.dart';
 import 'pages/shell_page.dart';
@@ -25,7 +25,10 @@ class TabungKuApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
-      listenable: Listenable.merge([PengaturanState.themeMode, PengaturanState.seedColor]),
+      listenable: Listenable.merge([
+        PengaturanState.themeMode,
+        PengaturanState.seedColor,
+      ]),
       builder: (context, _) {
         return MaterialApp(
           title: 'TabungKu',
@@ -34,7 +37,9 @@ class TabungKuApp extends StatelessWidget {
           darkTheme: buatTema(PengaturanState.seedColor.value, Brightness.dark),
           themeMode: PengaturanState.themeMode.value,
           initialRoute: '/',
-          routes: {'/': (_) => const ShellPage()},
+          routes: {
+            '/': (_) => const ShellPage(),
+          },
           onGenerateRoute: (settings) {
             if (settings.name == '/form') {
               final kegiatan = settings.arguments as Kegiatan?;

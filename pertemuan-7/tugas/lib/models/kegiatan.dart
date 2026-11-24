@@ -1,4 +1,4 @@
-enum Tipe {
+﻿enum Tipe {
   tanpa,
   pemasukan,
   pengeluaran;

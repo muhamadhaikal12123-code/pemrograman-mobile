@@ -1,21 +1,28 @@
 # Tugas Mini Proyek Terpadu — TabungKu
 
+**TabungKu** adalah aplikasi manajemen kegiatan harian (to-do list) yang terintegrasi dengan pencatatan keuangan harian untuk membantu mahasiswa memantau pemasukan, pengeluaran per kategori, dan progres target tabungan harian.
+
 ## Daftar Fitur
 
-- F1: Daftar kegiatan hari ini dengan centang selesai, ubah, dan hapus dengan dialog konfirmasi.
-- F2: Form tambah/ubah kegiatan dengan pemilih tanggal, jenis keuangan, nominal, kategori, dan validasi.
-- F3: Penyimpanan persisten SQLite pada tabel kegiatan.
-- F4: Ringkasan harian (kegiatan selesai/total, pemasukan, pengeluaran, tabungan).
-- F5: Halaman Laporan (pilih tanggal, pengeluaran per kategori, riwayat 7 hari terakhir).
-- F6: Target tabungan harian dengan indikator progres beranimasi.
-- F7: Pengaturan target harian, mode gelap, dan warna tema (shared_preferences).
-- F8: Navigasi 3 tab (NavigationBar + IndexedStack) dan form via named route (/form).
+- **F1:** Daftar kegiatan hari ini dengan status centang selesai, ubah data, dan hapus dengan dialog konfirmasi.
+- **F2:** Form tambah/ubah kegiatan dengan input nama, pemilih tanggal (`DatePicker`), jenis keuangan (`Tidak melibatkan uang`, `Pemasukan`, `Pengeluaran`), nominal, kategori, serta validasi input.
+- **F3:** Penyimpanan persisten menggunakan SQLite (`sqflite`) pada tabel `kegiatan`.
+- **F4:** Ringkasan harian (kegiatan selesai/total, pemasukan, pengeluaran, dan tabungan).
+- **F5:** Halaman Laporan berisi pemilih tanggal, ringkasan harian, pengeluaran per kategori (`GROUP BY`), dan riwayat 7 hari terakhir.
+- **F6:** Target tabungan harian dengan indikator progres beranimasi (`TweenAnimationBuilder`), peringatan saat tabungan negatif, dan apresiasi saat target tercapai.
+- **F7:** Halaman Pengaturan untuk mengatur target harian, mode gelap/terang, dan pilihan warna tema (`shared_preferences`).
+- **F8:** Navigasi 3 tab (`NavigationBar` + `IndexedStack`) serta halaman form via named route (`/form`).
 
 ## Fitur Pengembangan Lanjutan
 
-1. Pencarian dan Filter Kegiatan (LIKE & WHERE pada halaman Hari Ini).
-2. Rencana vs Realisasi (perbandingan tabungan semua kegiatan vs kegiatan selesai).
-3. Ekspor Laporan ke Clipboard.
+1. **Pencarian dan Filter Kegiatan:** Filter berdasarkan kata kunci judul (`LIKE`) dan jenis keuangan (`WHERE`) di tab Hari Ini.
+2. **Rencana vs Realisasi:** Perbandingan perhitungan tabungan seluruh kegiatan vs kegiatan yang sudah dicentang selesai beserta selisihnya di tab Laporan.
+3. **Ekspor Laporan ke Clipboard:** Tombol salin ringkasan laporan harian ke papan klip (`Clipboard`).
+
+## Cara Menjalankan
+
+1. Jalankan perintah `flutter pub get` di dalam folder `tugas/`
+2. Jalankan perintah `flutter run`
 
 ## Tabel Hasil Skenario Uji
 

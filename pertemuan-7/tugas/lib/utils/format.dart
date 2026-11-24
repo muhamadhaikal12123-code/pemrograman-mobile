@@ -1,4 +1,4 @@
-String formatRupiah(int angka) {
+﻿String formatRupiah(int angka) {
   final negatif = angka < 0;
   final s = angka.abs().toString();
   final buffer = StringBuffer();
@@ -26,5 +26,5 @@ String formatTanggalIndo(String iso) {
   if (parts.length != 3) return iso;
   final d = int.tryParse(parts[2]) ?? 1;
   final m = int.tryParse(parts[1]) ?? 1;
-  return '$d ${bulan[m]}${parts[0]}';
+  return '$d ${bulan[m]} ${parts[0]}';
 }

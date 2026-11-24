@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+﻿import 'package:flutter/foundation.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import '../models/kegiatan.dart';
@@ -62,7 +62,7 @@ class DbHelper {
     final whereArgs = <Object?>[tanggal];
     if (keyword.trim().isNotEmpty) {
       whereClauses.add('judul LIKE ?');
-      whereArgs.add('%${keyword.trim()}%');
+      whereArgs.add('%%');
     }
     if (filterTipe != null) {
       whereClauses.add('tipe = ?');
@@ -100,7 +100,7 @@ class DbHelper {
     );
   }
 
-  static Future> pengeluaranPerKategori(String tanggal) async {
+  static Future<Map<String, int>> pengeluaranPerKategori(String tanggal) async {
     final db = await database;
     final hasil = await db.rawQuery('''
       SELECT kategori, COALESCE(SUM(nominal), 0) AS total
